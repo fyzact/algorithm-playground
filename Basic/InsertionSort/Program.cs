@@ -23,7 +23,7 @@ namespace InsertionSort
             for (int i = 1; i < length; i++)
             {
                 int addedNumber=array[i];
-                for (int k = i-1;  k>=0;  k--)
+                for (int k = i-1;  k>=0 && addedNumber<array[k];  k--)
                 {
                    if(addedNumber<array[k]){
                        array[k+1]=array[k];
